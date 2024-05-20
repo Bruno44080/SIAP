@@ -30,9 +30,6 @@ folha_servidor <- function(
               col.names = F,na = '',dec ='.',fileEncoding = 'latin1')
   
 }
-folha_servidor()
-
-
 folha_verbas <- function(
     pasta = 'C:\\SIAP',
     arquivo = 'FolhaVerbas.csv',
@@ -73,12 +70,3 @@ folha_verbas <- function(
   write.table(x = folha,file = paste0(pasta,'\\',ano,'\\',competencia,'\\',arquivo),quote = F,dec = '.',sep = '|',row.names = F,
               col.names = F,na = '',fileEncoding = 'latin1')
 }
-folha_verbas()
-
-
-
-
-folha_verbas(competencia = '04. Abril')
-
-folha_servidor(competencia = '04. Abril')
-
