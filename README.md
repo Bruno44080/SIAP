@@ -18,3 +18,7 @@ Para a execução adequada dos códigos, é esperado que sua maquina tenha:
 				- Brutos
 
 Mova os arquivos *FolhaServidor.csv* e *FolhaVerbas.csv* para a pasta **Brutos** do respectivo mês de envio.
+
+`source("https://raw.githubusercontent.com/Bruno44080/SIAP/main/SIAP_Ajuste_Folha.R")`
+`folha_servidor(ano = 2024,competencia = "04")`
+`folha_verbas(ano = 2024,competencia = "04")`
