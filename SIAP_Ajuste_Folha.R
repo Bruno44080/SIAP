@@ -19,6 +19,7 @@ folha_servidor <- function(
   folha$V5 # V5: Identificação do Tipo de Servidor Ativo
   folha$V6 # V6: Código de Controle da Função utilizada pela Entidade *
   folha$V7 # V7: Nome da Função utilizada pela Entidade
+  folha$V7[folha$V7 == 'TEC.DE DESENHO DA CONSTR.CIVIL'] <- 'TECNICO DE DESENHO DA CONSTRUCAO CIVIL'
   folha$V8 # V8: Nome da Lotação
   # V9: Percentual de Desconto Patronal
   folha$V9 <- sprintf(folha$V9, fmt = '%#05.2f')
